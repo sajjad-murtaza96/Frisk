@@ -28,12 +28,13 @@ export default function Skills() {
             <div className="about-content-wrap">
               <div className="title-area mb-0">
                 <h2 className="sec-title">
-                  We Offer a Wide Range of Brand Services
+                  Diverse Brand Services: Crafting identities that captivate,
+                  and endure
                 </h2>
                 <p className="sec-text mt-35 mb-40">
-                  We are a creative agency working with brands building
-                  insightful strategy, creating unique designs and crafting
-                  value
+                  From website development to design branding, logo creation,
+                  and beyond, we offer a full spectrum of services tailored to
+                  enhance your brand presence and drive success.
                 </p>
                 {skillsData.map((skill) => (
                   <div key={skill.id} className="skill-feature">

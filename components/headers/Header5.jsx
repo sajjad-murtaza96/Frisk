@@ -112,9 +112,9 @@ export default function Header5() {
                   <div className="header-logo">
                     <Link scroll={false} href="/">
                       <Image
-                        width={86}
-                        height={24}
-                        src="/assets/img/logo-white-sm.svg"
+                        width={200}
+                        height={200}
+                        src="/assets/img/logo-white.png"
                         alt="logo"
                       />
                     </Link>

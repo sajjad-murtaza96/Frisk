@@ -114,9 +114,9 @@ export default function Header3() {
                   <div className="header-logo">
                     <Link scroll={false} href="/">
                       <Image
-                        width={86}
-                        height={24}
-                        src="/assets/img/logo.svg"
+                        width={200}
+                        height={200}
+                        src="/assets/img/logo-dark.png"
                         alt="logo"
                       />
                     </Link>

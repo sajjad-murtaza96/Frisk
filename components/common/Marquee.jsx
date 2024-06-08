@@ -6,25 +6,25 @@ export default function MarqueeComponent() {
     {
       id: 1,
       href: "#",
-      text: "We Give Unparalleled Flexibility",
+      text: "Delivering agile solutions for digital transformation",
       icon: "fas fa-star-of-life",
     },
     {
       id: 2,
       href: "#",
-      text: "We Give Unparalleled Flexibility",
+      text: "Coding with unparalleled adaptability",
       icon: "fas fa-star-of-life",
     },
     {
       id: 3,
       href: "#",
-      text: "We Give Unparalleled Flexibility",
+      text: "Transforming visions into reality with creative expertise",
       icon: "fas fa-star-of-life",
     },
     {
       id: 4,
       href: "#",
-      text: "We Give Unparalleled Flexibility",
+      text: "Crafting brand legacies with strategic expertise",
       icon: "fas fa-star-of-life",
     },
   ];

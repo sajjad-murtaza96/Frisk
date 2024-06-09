@@ -23,7 +23,7 @@ export default function Features() {
                 <div key={i} className="feature-static">
                   <div className="feature-card style-grid">
                     <div className="feature-card-icon">
-                      <Image width={40} height={40} src={elm.icon} alt="icon" />
+                      <Image width={40} height={40} src={elm.iconSrc} alt="icon" />
                     </div>
                     <div className="feature-card-details">
                       <h4 className="feature-card-title">

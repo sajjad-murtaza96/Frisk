@@ -19,8 +19,8 @@ export default function Clients() {
                           height={35}
                           src={elm.img}
                           style={{
-                            objectFit: "contain",
-                            width: "162px",
+                            objectFit: "cover",
+                            width: "150px",
                             height: "35px",
                           }}
                           alt="img"
@@ -32,8 +32,8 @@ export default function Clients() {
                           height={35}
                           src={elm.img}
                           style={{
-                            objectFit: "contain",
-                            width: "162px",
+                            objectFit: "cover",
+                            width: "150px",
                             height: "35px",
                           }}
                           alt="img"

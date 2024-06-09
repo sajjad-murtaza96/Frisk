@@ -18,7 +18,7 @@ export default function Skills() {
         <Image
           width={838}
           height={788}
-          src="/assets/img/normal/service_2-1.jpg"
+          src="/assets/img/normal/service_2-1.png"
           alt="img"
         />
       </div>
@@ -28,8 +28,7 @@ export default function Skills() {
             <div className="about-content-wrap">
               <div className="title-area mb-0">
                 <h2 className="sec-title">
-                  Diverse Brand Services: Crafting identities that captivate,
-                  and endure
+                  Brand Services: Crafting captivating, enduring identities
                 </h2>
                 <p className="sec-text mt-35 mb-40">
                   From website development to design branding, logo creation,

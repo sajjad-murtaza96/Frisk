@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="col-lg-12">
               <div className="hero-style7 text-center">
                 <h1 className="hero-title wow img-custom-anim-top animated text-smoke">
-                  Empowering brands while elevating experiences to new heights
+                  Empowering brands’ experiences to new heights
                 </h1>
                 <p className="hero-text wow img-custom-anim-top animated text-smoke">
                   We don’t just build solutions; we craft innovations that
@@ -24,7 +24,7 @@ export default function Hero() {
                 <Image
                   width={556}
                   height={440}
-                  src="/assets/img/hero/hero-7-1.jpg"
+                  src="/assets/img/hero/hero-7-1.png"
                   alt="img"
                 />
               </div>

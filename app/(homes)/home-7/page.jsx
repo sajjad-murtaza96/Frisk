@@ -9,7 +9,6 @@ import Projects from "@/components/homes/home-7/Projects";
 import React from "react";
 import Faq from "@/components/homes/home-7/Faq";
 import Testimonials from "@/components/homes/common/Testimonials";
-import Blogs from "@/components/homes/home-7/Blogs";
 import Cta from "@/components/homes/home-7/Cta";
 import Footer3 from "@/components/footers/Footer3";
 import MarqueeComponent from "@/components/common/Marquee";
@@ -28,7 +27,6 @@ export default function HomePage7() {
       <MarqueeComponent />
       <Faq />
       <Testimonials />
-      <Blogs />
       <Cta />
       <Footer3 />
     </>

@@ -5,5 +5,4 @@ export const clients = [
   { href: "#", img: "/assets/img/client/client-1-4.png" },
   { href: "#", img: "/assets/img/client/client-1-5.png" },
   { href: "#", img: "/assets/img/client/client-1-6.png" },
-  { href: "#", img: "/assets/img/client/client-1-7.png" },
 ];

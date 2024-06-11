@@ -10,7 +10,7 @@ export default function Skills() {
         className="service-img-1-1 shape-mockup wow img-custom-anim-left animated"
         data-wow-duration="1.5s"
         data-wow-delay="0.2s"
-        style={{ top: "-100px", left: "0px", bottom: "140px" }}
+        style={{ left: "0px", bottom: "140px" }}
         data-left="0"
         data-top="-100px"
         data-bottom="140px"

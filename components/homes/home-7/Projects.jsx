@@ -24,7 +24,7 @@ export default function Projects() {
               >
                 <div className="portfolio-thumb">
                   <Image
-                    width={746}
+                    width={2000}
                     height={540}
                     src={elm.imageUrl}
                     alt="portfolio"
@@ -41,7 +41,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="btn-wrap mt-50 justify-content-center">
-          <Link scroll={false} href="/project" className="btn">
+          <Link scroll={false} href="/project-2" className="btn">
             <span className="link-effect">
               <span className="effect-1">VIEW ALL PROJECTS</span>
               <span className="effect-1">VIEW ALL PROJECTS</span>

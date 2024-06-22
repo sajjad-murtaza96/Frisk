@@ -73,7 +73,7 @@ export default function ServiceDetails({ serviceId }) {
                     />
                   </div>
                   <h4 className="feature-card-title">
-                    <Link scroll={false} href="/project">
+                    <Link scroll={false} href="/project-2">
                       Custom Solutions
                     </Link>
                   </h4>
@@ -94,7 +94,7 @@ export default function ServiceDetails({ serviceId }) {
                     />
                   </div>
                   <h4 className="feature-card-title">
-                    <Link scroll={false} href="/project">
+                    <Link scroll={false} href="/project-2">
                       Timely Execution
                     </Link>
                   </h4>

@@ -1,8 +1,5 @@
 "use client";
-import {
-  portfolioData4,
-  SHOW_PER_LOAD_MORE,
-} from "@/data/portfolio";
+import { portfolioData4, SHOW_PER_LOAD_MORE } from "@/data/portfolio";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -43,14 +40,16 @@ export default function Projects2() {
             </div>
           ))}
         </div>
-        <div className="btn-wrap justify-content-center mt-60">
-          <button className="btn" onClick={handleLoadMore}>
-            <span className="link-effect">
-              <span className="effect-1">LOAD MORE</span>
-              <span className="effect-1">LOAD MORE</span>
-            </span>
-          </button>
-        </div>
+        {portfolioData4.length !== portfolioData4.slice(0, threshold).length && (
+          <div className="btn-wrap justify-content-center mt-60">
+            <button className="btn" onClick={handleLoadMore}>
+              <span className="link-effect">
+                <span className="effect-1">LOAD MORE</span>
+                <span className="effect-1">LOAD MORE</span>
+              </span>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

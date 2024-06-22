@@ -3,7 +3,6 @@ import Footer8 from "@/components/footers/Footer8";
 import Header3 from "@/components/headers/Header3";
 
 import ServiceDetails from "@/components/service/ServiceDetails";
-import { allFeatures } from "@/data/features";
 
 //For Static Side Genaration(SSG)
 

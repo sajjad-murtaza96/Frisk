@@ -1,4 +1,4 @@
-import { featureData2 } from "@/data/features";
+import { featureData4 } from "@/data/features";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -19,7 +19,7 @@ export default function Features() {
           </div>
           <div className="col-xxl-6 col-xl-6">
             <div className="feature-static-wrap">
-              {featureData2.map((elm, i) => (
+              {featureData4.map((elm, i) => (
                 <div key={i} className="feature-static">
                   <div className="feature-card style-grid">
                     <div className="feature-card-icon">

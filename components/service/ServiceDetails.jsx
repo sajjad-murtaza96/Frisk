@@ -1,12 +1,11 @@
-"use client";
-
-import { allFeatures } from "@/data/features";
+import { featureData4 } from "@/data/features";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ServiceDetails({ serviceId }) {
   const serviceItem =
-    allFeatures.filter((elm) => elm.id == serviceId)[0] || allFeatures[1];
+    featureData4.filter((elm) => elm.id == serviceId)[0] || featureData4[1];
+  const { serviceDetails } = serviceItem;
   return (
     <div className="service-details-page-area space">
       <div className="container">
@@ -25,28 +24,16 @@ export default function ServiceDetails({ serviceId }) {
           <div className="col-xl-8">
             <div className="title-area mb-35">
               <h2 className="sec-title">{serviceItem.title}</h2>
-              <p className="sec-text mt-30">
-                BaseCreate is pleased to announce that it has been commissioned
-                by Leighton Asia reposition its brand. We will help Leighton
-                Asia evolve its brand strategy, and will be responsible updating
-                Leighton Asia’s brand identity, website, and other collaterals.
-              </p>
-              <p className="sec-text mt-30">
-                For almost 50 years Leighton Asia, one of the region’s largest
-                and most respected construction companies, has been
-                progressively building for a better future by leveraging
-                international expertise with local intelligence. In that time
-                Leighton has delivered some of Asia’s prestigious buildings and
-                transformational infrastructure projects.
-              </p>
+              <div
+                dangerouslySetInnerHTML={{ __html: serviceDetails?.description ?? "" }}
+              ></div>
             </div>
             <h3>Remarking Services</h3>
-            <p className="sec-text mb-n1">
-              Leighton Asia’s brand refreshment will help position the company
-              to meet the challenges of future, as it seeks to lead the industry
-              in technological innovation and sustainable building practices to
-              deliver long-lasting value for its clients.
-            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: serviceDetails?.remarkingServices ?? "",
+              }}
+            ></div>
           </div>
           <div className="col-lg-12">
             <div className="video-area-1 mt-80 mb-80">
@@ -66,45 +53,33 @@ export default function ServiceDetails({ serviceId }) {
             </div>
           </div>
           <div className="col-xl-8">
-            <p className="sec-text mt-n1 mb-40">
-              Leighton Asia’s brand refreshment will help position the company
-              to meet the challenges of future, as it seeks to lead the industry
-              in technological innovation and sustainable building practices to
-              deliver long-lasting value for its clients.
-            </p>
-            <h3>Making for Users Friendly</h3>
-            <p className="sec-text mt-30">
-              Leighton Asia’s brand refreshment will help position the company
-              to meet the challenges of future, as it seeks to lead the industry
-              in technological innovation and sustainable building practices to
-              deliver long-lasting value for its clients.
-            </p>
-            <p className="sec-text mb-40 mt-30">
-              For almost 50 years Leighton Asia, one of the region’s largest and
-              most respected construction companies, has been progressively
-              building for a better future by leveraging international expertise
-              with local intelligence. In that time Leighton has delivered some
-              of Asia’s prestigious buildings and transformational
-              infrastructure projects.
-            </p>
+            <h3>Services Offered</h3>
+            <ul className="sec-text mb-40">
+              {serviceDetails?.servicesOffered?.map((item) => (
+                <li className="sec-text mb-20">
+                  <strong>{`${item.title} :`}</strong> {item.text}
+                </li>
+              )) ?? ""}
+            </ul>
             <div className="row gy-4">
               <div className="col-md-6">
                 <div className="feature-card">
                   <div className="feature-card-icon">
                     <Image
-                      width={40}
-                      height={40}
-                      src="/assets/img/icon/feature-icon1-3.svg"
+                      width={60}
+                      height={60}
+                      src="/assets/img/icon/feature-icon1-1.png"
                       alt="icon"
                     />
                   </div>
                   <h4 className="feature-card-title">
                     <Link scroll={false} href="/project">
-                      Custom Solution
+                      Custom Solutions
                     </Link>
                   </h4>
                   <p className="feature-card-text mb-n2">
-                    We care success relationships fuel success we love building
+                    Tailored strategies and creative solutions crafted to drive
+                    success and foster strong client relationships worldwide.
                   </p>
                 </div>
               </div>
@@ -112,28 +87,29 @@ export default function ServiceDetails({ serviceId }) {
                 <div className="feature-card">
                   <div className="feature-card-icon">
                     <Image
-                      width={40}
-                      height={40}
-                      src="/assets/img/icon/feature-icon1-6.svg"
+                      width={60}
+                      height={60}
+                      src="/assets/img/icon/feature-icon1-2.png"
                       alt="icon"
                     />
                   </div>
                   <h4 className="feature-card-title">
                     <Link scroll={false} href="/project">
-                      In-time Result
+                      Timely Execution
                     </Link>
                   </h4>
                   <p className="feature-card-text mb-n2">
-                    We care success relationships fuel success we love building
+                    Efficient project management ensuring prompt delivery and
+                    exceptional results.
                   </p>
                 </div>
               </div>
             </div>
             <p className="sec-text mb-n1 mt-40">
-              Leighton Asia’s brand refreshment will help position the company
-              to meet the challenges of future, as it seeks to lead the industry
-              in technological innovation and sustainable building practices to
-              deliver long-lasting value for its clients.
+              At XperLabs, we combine innovation with a commitment to
+              sustainability, empowering global brands like yours to lead in
+              their industries and deliver enduring value to stakeholders
+              worldwide.
             </p>
           </div>
         </div>
